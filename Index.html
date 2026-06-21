@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luxury Gems Jewelry</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f8f5f2;
+}
+
+header{
+    background:#111;
+    color:white;
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+}
+
+.hero{
+    height:80vh;
+    background:url('https://images.unsplash.com/photo-1617038220319-276d3cfab638') center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:55px;
+}
+
+.products{
+    padding:50px 10%;
+}
+
+.products h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.card img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:15px;
+}
+
+.price{
+    color:#b8860b;
+    font-size:20px;
+    font-weight:bold;
+    margin:10px 0;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:#111;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Luxury Gems</div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">Collections</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div>
+        <h1>Elegant Jewelry Collection</h1>
+        <p>Discover timeless beauty and luxury.</p>
+    </div>
+</section>
+
+<section class="products">
+    <h2>Featured Products</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a" alt="">
+            <div class="card-content">
+                <h3>Diamond Ring</h3>
+                <div class="price">₹19,999</div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f" alt="">
+            <div class="card-content">
+                <h3>Gold Necklace</h3>
+                <div class="price">₹29,999</div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1600721391776-b5cd0e0048f9" alt="">
+            <div class="card-content">
+                <h3>Pearl Earrings</h3>
+                <div class="price">₹9,999</div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    © 2026 Luxury Gems Jewelry Store. All Rights Reserved.
+</footer>
+
+</body>
+</html>
